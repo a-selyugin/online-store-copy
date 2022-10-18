@@ -1,0 +1,146 @@
+@import "../../../style.scss";
+
+.prod-card {
+  $font-card: Arial, serif;
+  $font-main-color: #000000;
+  $font-secondary-color: #696969;
+  $in-cart-color: #FFCCDD;
+  transition: 0.3s;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 1px black;
+  
+  .prod-card__image {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: inherit;
+
+    .prod-card__image_int {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      transition: inherit;
+    }
+  }
+
+  .prod-card__legend{
+
+    min-height: 135px;
+
+    .prod-card__first-line,
+    .prod-card__name,
+    .prod-card__type,
+    .prod-card__artist,
+    .prod-card__sizes,
+    .prod-card__year {
+      padding: 0 10px;
+    }
+
+    .prod-card__first-line{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .prod-card__price {
+      font-size: 2em;
+      font-weight: 600;
+    }
+
+    .prod-card__qty {
+      font-size: 1em;
+      font-weight: 300;
+      color: $font-secondary-color;
+    }
+
+    .prod-card__name {
+      font-size: 1.2em;
+      font-weight: 300;    
+    }
+
+    .prod-card__type,
+    .prod-card__artist,
+    .prod-card__sizes,
+    .prod-card__year {
+      font-size: 1em;
+      color: $font-secondary-color;
+    }
+  }
+
+  .prod-card__button-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .prod-card__button {
+      width: 150px;
+      height: 30px;
+      background-color: $buttonColor;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .prod-card__button:hover {
+      background-color: darken($buttonColor, 20%);
+      box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.5); 
+    }
+
+    .prod-card__button:active {
+      background-color: darken($buttonColor, 30%);
+      box-shadow: none; 
+    }
+
+    .prod-card__button_remove{
+      display: none;
+    }
+
+    .in-cart {
+      display: block;
+      width: 30px;
+    }
+    .in-cart:hover {
+      background-color: darken($buttonColor, 5%);
+      box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.5); 
+    }
+    .in-cart:active {
+      background-color: darken($buttonColor, 10%);
+      box-shadow: none; 
+    }
+  }
+
+
+}
+
+.prod-card:hover {
+  box-shadow: 2px 2px 10px black;
+
+  .prod-card__image {
+
+    .prod-card__image_int {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .product-zone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .product-zone {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}

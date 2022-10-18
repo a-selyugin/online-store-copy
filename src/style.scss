@@ -1,0 +1,284 @@
+$font-main: helvetica, sans-serif;
+$buttonColor: aquamarine;
+
+html{
+  overflow-y: scroll;
+}
+
+body, button{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  padding: 20px;
+  min-height:  calc(100vh - 100px);
+}
+
+.overlay {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-main;
+
+
+  .modal-window {
+    background-color: white;
+    height: 70px;
+    max-width: 400px;
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+
+    .overlay__text {
+      margin: 0;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .overlay__close-button {
+      background-color: $buttonColor;
+      border-radius: 10px;
+      border-color: transparent;
+      width: 50px;
+      height: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .overlay__close-button:hover {
+      background-color: darken($buttonColor, 20%);
+      box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.5); 
+    }
+
+    .overlay__close-button:active {
+      background-color: darken($buttonColor, 30%);
+      box-shadow: none; 
+    }
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: $font-main;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-header,
+.footer {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+}
+
+.logo {
+  display: block;
+  .img-logo {
+    display: inherit;
+    width: 70px;
+    margin: 5px 0;
+  }
+}
+
+.cart {
+  display: flex;
+  position: relative;
+  overflow: visible;
+
+  img {
+    position: relative;
+  }
+  .cart-counter {
+    position: absolute;
+    height: 20px;
+    padding: 0 6px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: slategrey;
+    font-size: 1rem;
+    border-radius: 30px;
+  }
+}
+
+
+.shop-section {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px
+}
+
+.search-input {
+  height: 2rem;
+  width: calc(100% - 10px);
+  padding: 0.5rem;
+  border: transparent;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.reset-button{
+  width: 100px;
+  height: 30px;
+  background-color: $buttonColor;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: 0.3s;
+  margin: 10px 0;
+}
+.full-reset{
+  width: 130px;
+  padding: auto, 15px;
+}
+
+.reset-button:hover {
+  cursor: pointer;
+  background-color: darken($buttonColor, 20%);
+  box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.5); 
+}
+
+.reset-button:active {
+  background-color: darken($buttonColor, 30%);
+  box-shadow: none; 
+}
+
+.sort-by {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  hr{
+    flex-grow: 1;
+    margin: 0 30px;
+  }
+  div,
+  form,
+  .sort-select{
+    font-family: $font-main;
+    font-size: 1rem;
+  }
+
+  .sort-select{
+    border-color: transparent;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.product-zone {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.footer{
+  padding: 5px 20px;
+}
+.github-link{
+  display: flex;
+  align-items: center;
+}
+.rs-link{
+  display: block;
+  font-size: 0;
+  height: 23px;
+  width: 61px;
+}
+.gh-logo {
+  height: 20px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .product-zone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .sort-by{
+
+    div,
+    form,
+    .sort-select{
+      font-size: 1rem;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .shop-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .product-zone {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+
+  .sort-by{
+
+    div,
+    form,
+    .sort-select{
+      font-size: 0.9rem;
+    }
+    
+  }
+
+  .text-filters {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sort-by{
+
+    div,
+    form,
+    .sort-select{
+      font-size: 0.7rem;
+    }
+
+    .sort-select{
+      padding: 0;
+    }
+    
+  }
+
+  .text-filters {
+    display: block;
+  }
+}

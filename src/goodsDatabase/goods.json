@@ -1,0 +1,265 @@
+[  
+  {
+    "id": "1",
+    "artist": "Show Me a Dinosaur",
+    "type": "CD",
+    "name": "Show Me a Dinosaur",
+    "qty": 25,
+    "yearOfRelease": 2016,
+    "price": 10,
+    "imgUrl": "./assets/img/cd-smad.jpg",
+    "popular": false,
+    "color": "Multicolor"
+  },
+  {
+    "id": "2",
+    "artist": "Show Me a Dinosaur",
+    "type": "CD",
+    "name": "Plantgazer",
+    "qty": 13,
+    "yearOfRelease": 2020,
+    "price": 10,
+    "imgUrl": "./assets/img/cd-plant.jpg",
+    "popular": false,
+    "color": "Green"
+  },
+  {
+    "id": "3",
+    "artist": "Show Me a Dinosaur",
+    "type": "Cassette",
+    "name": "Plantgazer",
+    "qty": 3,
+    "yearOfRelease": 2020,
+    "price": 15,
+    "imgUrl": "./assets/img/cass-plant.jpg",
+    "popular": false,
+    "color": "Green"
+  },
+  {
+    "id": "4",
+    "artist": "Show Me a Dinosaur",
+    "type": "Vinyl",
+    "name": "Plantgazer",
+    "qty": 17,
+    "yearOfRelease": 2020,
+    "price": 24,
+    "imgUrl": "./assets/img/vinyl-plant.jpg",
+    "popular": true,
+    "color": "Green"
+  },
+  {
+    "id": "5",
+    "artist": "Show Me a Dinosaur",
+    "type": "Vinyl",
+    "name": "Show Me a Dinosaur",
+    "qty": 1,
+    "yearOfRelease": 2016,
+    "price": 24,
+    "imgUrl": "./assets/img/vinyl-smad.jpg",
+    "popular": true,
+    "color": "Multicolor"
+  },
+  {
+    "id": "6",
+    "artist": "Show Me a Dinosaur",
+    "type": "Vinyl",
+    "name": "Dust",
+    "qty": 1,
+    "yearOfRelease": 2014,
+    "price": 24,
+    "imgUrl": "./assets/img/vinyl-dust.jpg",
+    "popular": false,
+    "color": "Multicolor"
+  },
+  {
+    "id": "7",
+    "artist": "Show Me a Dinosaur",
+    "type": "Longsleeve",
+    "name": "Nest",
+    "qty": 7,
+    "sizes": {
+      "S": 3,
+      "M": 2,
+      "L": 2
+    },
+    "yearOfRelease": 2021,
+    "price": 25,
+    "imgUrl": "./assets/img/long-plant.jpg",
+    "popular": false,
+    "color": "Black"
+  },
+  {
+    "id": "8",
+    "artist": "Show Me a Dinosaur",
+    "type": "Shopper",
+    "name": "Dino skull",
+    "qty": 11,
+    "price": 10,
+    "yearOfRelease": 2011,
+    "imgUrl": "./assets/img/shopper_sq.jpg",
+    "popular": false,
+    "color": "Beige"
+  },
+  {
+    "id": "9",
+    "artist": "Show Me a Dinosaur",
+    "type": "T-shirt",
+    "name": "Nest",
+    "qty": 3,
+    "sizes": {
+      "S": 1,
+      "M": 1,
+      "XXL": 1
+    },
+    "yearOfRelease": 2021,
+    "price": 20,
+    "imgUrl": "./assets/img/t-shirt-plant.jpg",
+    "popular": true,
+    "color": "Black"
+  },
+  {
+    "id": "10",
+    "artist": "Show Me a Dinosaur",
+    "type": "T-shirt",
+    "name": "Sunflower",
+    "qty": 7,
+    "sizes": {
+      "S": 1,
+      "M": 3,
+      "L": 1,
+      "XL": 2
+    },
+    "yearOfRelease": 2022,
+    "price": 20,
+    "imgUrl": "./assets/img/t-shirt-plant-2.jpg",
+    "popular": true,
+    "color": "Beige"
+  },
+  {
+    "id": "11",
+    "artist": "Somn",
+    "type": "CD",
+    "name": "The All-devouring",
+    "qty": 17,
+    "yearOfRelease": 2019,
+    "price": 10,
+    "imgUrl": "./assets/img/cd-all-devour.jpg",
+    "popular": false,
+    "color": "Black"
+  },
+  {
+    "id": "12",
+    "artist": "Somn",
+    "type": "T-shirt",
+    "name": "Nightshift",
+    "qty": 11,
+    "sizes": {
+      "S": 3,
+      "M": 3,
+      "L": 3,
+      "XL": 2
+    },
+    "yearOfRelease": 2019,
+    "price": 20,
+    "imgUrl": "./assets/img/t-shirt-nightshift.jpg",
+    "popular": false,
+    "color": "Black"
+  },
+  {
+    "id": "13",
+    "artist": "Somn",
+    "type": "Longsleeve",
+    "name": "Nightshift",
+    "qty": 9,
+    "sizes": {
+      "S": 1,
+      "M": 2,
+      "L": 2,
+      "XXL": 4
+    },
+    "yearOfRelease": 2019,
+    "price": 25,
+    "imgUrl": "./assets/img/long-nightshift.jpg",
+    "popular": false,
+    "color": "Black"
+  },
+  {
+    "id": "14",
+    "artist": "Trna",
+    "type": "Longsleeve",
+    "name": "Dark Entries",
+    "qty": 13,
+    "sizes": {
+      "S": 3,
+      "M": 2,
+      "L": 2,
+      "XL": 2,
+      "XXL": 4
+    },
+    "yearOfRelease": 2021,
+    "price": 25,
+    "imgUrl": "./assets/img/long-dark-entries.jpg",
+    "popular": false,
+    "color": "Black"
+  },
+  {
+    "id": "15",
+    "artist": "Trna",
+    "type": "T-shirt",
+    "name": "Owl",
+    "qty": 10,
+    "sizes": {
+      "S": 2,
+      "M": 3,
+      "L": 3,
+      "XL": 2
+    },
+    "yearOfRelease": 2015,
+    "price": 20,
+    "imgUrl": "./assets/img/t-shirt-owl.jpg",
+    "popular": true,
+    "color": "Black"
+  },
+  {
+    "id": "16",
+    "artist": "Olhava",
+    "type": "T-shirt",
+    "name": "Forest Huts",
+    "qty": 9,
+    "sizes": {
+      "S": 2,
+      "M": 2,
+      "L": 3,
+      "XL": 2
+    },
+    "yearOfRelease": 2018,
+    "price": 20,
+    "imgUrl": "./assets/img/t-shirt-forest-huts.jpg",
+    "popular": true,
+    "color": "Black"
+  },
+  {
+    "id": "17",
+    "artist": "Olhava",
+    "type": "Shopper",
+    "name": "Deer Bones",
+    "qty": 9,
+    "yearOfRelease": 2016,
+    "price": 11,
+    "imgUrl": "./assets/img/shopper-deerbones.jpg",
+    "popular": false,
+    "color": "Black"
+  },
+  {
+    "id": "18",
+    "artist": "Somn",
+    "type": "Patch",
+    "name": "Somn logo",
+    "qty": 15,
+    "yearOfRelease": 2018,
+    "price": 5,
+    "imgUrl": "./assets/img/patch-somn.jpg",
+    "popular": false,
+    "color": "Black"
+  }
+]
